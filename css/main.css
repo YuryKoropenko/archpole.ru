@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.clearfix:before {
+  content: '';
+  display: table;
+}
+.header__logo {
+	text-align: center;
+	padding: 76px 0 60px;
+}
+.logo {
+	display: inline-block;
+}
+.logo__img {
+	display: block;
+}
+.header__nav {
+	float: left;
+}
+.nav {
+	font-size: 0;
+}
+.nav__item {
+	display: inline-block;
+	padding: 0 20px;
+}
+.nav__item-active .nav__link {
+	
+}
+.nav__item:first-child {
+	padding-left: 0;
+}
+.nav__link {
+	line-height: 30px;
+	font-size: 17px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-family: "RobotoBold";
+	text-transform: uppercase;
+	color: #000;
+}
+.header__search {
+	float: right;
+}
+.search {
+	display: inline-block;
+	padding-left: 40px;
+	position: relative;
+}
+.search .fa {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	font-size: 25px;
+	color: #000;
+}
+.search__input {
+	display: block;
+	height: 30px;
+	border: 1px solid #999;
+	background-color: transparent;
+	padding: 0 5px;
+}
+.corz {
+	display: inline-block;
+	margin-left: 72px;
+	position: relative;
+}
+.corz__link .fa {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	left: 0;
+	font-size: 25px;
+}
+.corz__link {
+	padding-left: 40px;
+	display: block;
+	background-position: left center;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	color: #000;
+}
+.header__top {
+	border-bottom: 1px solid #000;
+	padding-bottom: 10px;
+}
+.header__bottom {
+	padding-top: 10px;
+}
+.header__subnav {
+	float: left;
+}
+.subnav {
+	font-size: 0;
+}
+.subnav__item {
+	display: inline-block;
+	padding-right: 10px;
+}
+.subnav__link {
+	text-transform: uppercase;
+	color: #000;
+	font-size: 15px;
+	text-decoration: none;
+	padding-right: 16px;
+	position: relative;
+}
+.subnav__link::after {
+	content: '<';
+	position: absolute;
+	right: 5px;
+	top: 1px;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	font-size: 12px;
+	font-weight: bold;
+}
+.header__h-profil {
+	float: right;
+}
+.header__h-like {
+	float: right;
+}
