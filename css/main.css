@@ -118,6 +118,7 @@ ul {
 .subnav__item {
 	display: inline-block;
 	padding-right: 10px;
+	position: relative;
 }
 .subnav__link {
 	text-transform: uppercase;
@@ -136,6 +137,35 @@ ul {
 	-webkit-transform: rotate(-90deg);
 	font-size: 12px;
 	font-weight: bold;
+}
+.subnav1 {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	background-color: #fff;
+	width: 200px;
+	margin-left: -100px;
+	border: 1px solid #000;
+	z-index: 10;
+	padding: 3px 0;
+	display: none;
+}
+.subnav1__item {
+	display: block;
+	padding: 3px 6px;
+	text-align: left;
+}
+.subnav1__link {
+	display: inline-block;
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;
+	line-height: 1.25;
+	font-family: "OpenSansRegular", sans-serif;
+}
+.subnav1__link:hover, .subnav1__link:focus, .subnav1__link:active {
+	text-decoration: underline;
+	color: #000;
 }
 .header__h-profil {
 	float: right;
