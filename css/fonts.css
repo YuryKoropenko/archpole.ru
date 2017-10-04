@@ -1,23 +1,4 @@
-/* font-family: "OpenSansRegular" */
 @font-face {
-  font-family: "OpenSansRegular";
-  src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
-}
-
-/* font-family: "OpenSansSemiBold" */
-@font-face {
-  font-family: "OpenSansSemiBold";
-  src: url(../fonts/OpenSans/OpenSans-Semibold.ttf);
-}
-
-/* font-family: "RobotoRegular" */
-@font-face {
-  font-family: "RobotoRegular";
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
-}
-
-/* font-family: "RobotoBold" */
-@font-face {
-  font-family: "RobotoBold";
-  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+	font-family: "AndaleMono";
+	src:url(../fonts/Andale_Mono.ttf);
 }
