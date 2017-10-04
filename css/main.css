@@ -91,10 +91,10 @@ ul {
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	left: 0;
-	font-size: 25px;
+	font-size: 40px;
 }
 .corz__link {
-	padding-left: 40px;
+	padding-left: 50px;
 	display: block;
 	background-position: left center;
 	height: 30px;
@@ -111,6 +111,7 @@ ul {
 }
 .header__subnav {
 	float: left;
+	width: 91%;
 }
 .subnav {
 	font-size: 0;
@@ -127,6 +128,7 @@ ul {
 	text-decoration: none;
 	padding-right: 16px;
 	position: relative;
+	display: block;
 }
 .subnav__link::after {
 	content: '<';
@@ -222,7 +224,7 @@ ul {
 }
 .c-categories {
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 60px;
 }
 .c-categories__item {
 	text-align: center;
@@ -231,9 +233,12 @@ ul {
 	margin-bottom: 10px;
 	display: block;
 	text-align: center;
+	height: 236px;
 }
 .c-categories__item a {
 	display: inline-block;
+	text-align: left;
+	width: 160px;
 }
 .c-categories__picture {
 	width: 160px;
@@ -257,8 +262,9 @@ ul {
 	display: inline-block;
 	text-decoration: none;
 	color: #333;
-	font-size: 19px;
-	font-family: "OpenSansRegular";
+	font-size: 15px;
+	font-family: "OpenSansSemiBold";
+	text-transform: uppercase;
 }
 .footer {
 	margin-top: 60px;
@@ -294,8 +300,8 @@ ul {
 }
 .content__c-path {
 	padding-top: 30px;
-	padding-bottom: 20px;
-	width: 100%;
+	padding-bottom: 30px;
+	width: 74%;
 	float: left;
 }
 .c-path {
@@ -337,6 +343,8 @@ ul {
 .content__c-titlecard {
 	float: left;
 	width: 100%;
+	margin-bottom: 30px;
+	margin-top: -5px;
 }
 .c-titlecard h2 {
 	font-weight: normal;
@@ -376,13 +384,15 @@ ul {
 	background-size: cover;
 }
 .c-slider__item {
-
+	text-align: center;
 }
 .c-slider__item img {
-
+	width: auto !important;
+	max-width: 100% !important;
+	display: inline-block !important;
 }
 .c-slider-nav {
-	margin-top: 20px;
+	margin-top: 30px;
 }
 .c-slider-nav__item {
 	width: 80px;
@@ -420,11 +430,22 @@ ul {
 	text-transform: uppercase;
 	font-size: 18px;
 	font-family: "RobotoBold";
+	font-weight: normal;
+	color: #000;
+}
+.c-description b {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: "OpenSansSemiBold";
+	color: #000;
+	font-weight: normal;
 }
 .c-description p {
 	text-transform: uppercase;
 	font-size: 18px;
-	font-family: "RobotoRegular";
+	font-family: "OpenSansSemiBold";
+	color: #999;
+	font-weight: normal;
 }
 .content__c-filter {
 
@@ -637,6 +658,7 @@ ul {
 	width: 160px;
 	display: inline-block;
 	margin-bottom: 20px;
+	height: 294px;
 }
 .c-tovars__img {
 	width: 100%;
@@ -681,4 +703,102 @@ ul {
 	top: 8px;
 	color: #000;
 	z-index: 9;
+}
+.c-interesting {
+	padding-top: 60px;
+}
+.c-interesting__title {
+	text-transform: uppercase;
+	font-family: "RobotoBold";
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+.c-interesting__list {
+
+}
+.c-interesting__item {
+	float: left;
+	width: 100px;
+	margin-left: 30px;
+	height: 175px;
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+.c-interesting__item:first-child {
+	margin-left: 0;
+}
+.c-interesting__top {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+.c-interesting__img {
+	width: 100%;
+}
+.c-interesting__subtitle {
+	text-transform: uppercase;
+	color: #000;
+	font-size: 12px;
+	font-family: "OpenSansSemiBold";
+	display: block;
+	padding-top: 5px;
+}
+.c-question {
+	padding-top: 60px;
+	text-align: right;
+	width: 60%;
+}
+.c-question__title {
+	text-transform: uppercase;
+	font-family: "RobotoBold";
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+	display: block;
+	text-align: left;
+}
+.c-question__input {
+	display: block;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #999;
+	text-transform: uppercase;
+	font-family: "OpenSansSemiBold";
+	font-size: 12px;
+	padding: 0 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.c-question__textarea {
+	display: block;
+	height: 120px;
+	width: 100%;
+	border: 1px solid #999;
+	text-transform: uppercase;
+	font-family: "OpenSansSemiBold";
+	font-size: 12px;
+	padding: 10px 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	text-align: left;
+	resize: none;
+}
+.c-question__button {
+	display: inline-block;
+	background-color: #000;
+	border: 1px solid #999;
+	color: #fff;
+	font-family: "OpenSansSemiBold";
+	font-size: 17px;
+	height: 30px;
+	line-height: 28px;
+	padding: 0 25px;
+	text-transform: uppercase;
 }
