@@ -370,7 +370,7 @@ body {
 	color: #999;
 }
 .c-path__link {
-	font-size: 20px;
+	font-size: 17px;
 	color: #000;
 	display: block;
 	text-decoration: none;
@@ -553,16 +553,22 @@ body {
 	margin-right: 12px;
 }
 .c-filter__price {
-	display: block;
-	width: 100%;
-	font-size: 18px;
+	display: inline-block;
+	font-size: 26px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	font-family: "AndaleMono";
 	font-weight: bold;
+	position: relative;
+	padding-right: 17px;
 }
 .c-filter__price::after {
 	content: ' р';
+	font-family: "AndaleMono";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 .c-filter__label {
 	text-transform: uppercase;
@@ -700,13 +706,14 @@ body {
 .c-tovars__item {
 	width: 160px;
 	display: inline-block;
-	margin-bottom: 20px;
-	height: 294px;
+	margin-bottom: 40px;
+	height: 263px;
+	text-align: center;
 }
 .c-tovars__img {
 	width: 100%;
 	position: relative;
-	height: 200px;
+	height: 160px;
 	display: block;
 	overflow: hidden;
 }
@@ -720,13 +727,30 @@ body {
 }
 .c-tovars__title {
 	display: block;
-	text-align: center;
+	text-align: left;
 	font-family: "AndaleMono";
 	font-size: 14px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000;
-	margin: 5px 0 10px;
+	margin: 5px 0;
+	min-height: 33px;
+}
+.c-tovars__price {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	padding-right: 14px;
+}
+.c-tovars__price::after {
+	content: 'р';
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 .c-tovars__button {
 	width: 100%;
@@ -850,4 +874,7 @@ body {
 	line-height: 28px;
 	padding: 0 25px;
 	text-transform: uppercase;
+}
+.clearfix .content__c-path {
+	width: 70%;
 }
