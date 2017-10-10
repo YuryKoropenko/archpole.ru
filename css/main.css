@@ -60,6 +60,7 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #000;
+	font-stretch: ultra-expanded;
 }
 .header__search {
 	float: right;
@@ -276,11 +277,11 @@ body {
 .c-categories__item a {
 	display: inline-block;
 	text-align: left;
-	width: 160px;
+	width: 196px;
 }
 .c-categories__picture {
-	width: 180px;
-	height: 180px;
+	width: 196px;
+	height: 196px;
 	overflow: hidden;
 	position: relative;
 	margin: 0 auto 10px;
@@ -762,6 +763,18 @@ body {
 	text-decoration: none;
 	font-family: "AndaleMono";
 	height: 30px;
+}
+.c-tovars__button:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.c-tovars__button:focus {
+	text-decoration: none;
+	color: #fff;
+}
+.c-tovars__button:active {
+	text-decoration: none;
+	color: #fff;
 }
 .c-tovars__izbrannoe {
 	position: absolute;
