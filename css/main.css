@@ -704,16 +704,16 @@ body {
 	text-align: right;
 }
 .c-tovars__item {
-	width: 160px;
+	width: 196px;
 	display: inline-block;
-	margin-bottom: 50px;
-	height: 263px;
+	margin-bottom: 60px;
+	height: 298px;
 	text-align: center;
 }
 .c-tovars__img {
 	width: 100%;
 	position: relative;
-	height: 160px;
+	height: 196px;
 	display: block;
 	overflow: hidden;
 }
