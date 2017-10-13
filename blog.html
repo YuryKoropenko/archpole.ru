@@ -4,16 +4,34 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!--scripts-->
 	<script src="libs/jquery.js"></script>
+	<script src="libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			$('.subnav__item').hover(function() {
 				$(this).children('.subnav1').stop(true, false).slideDown();
 			}, function() {
 				$(this).children('.subnav1').stop(true, false).hide();
+			});
+
+			$('.c-blog__slider').hover(function() {
+				$('.c-blog__slider .owl-nav').stop(true, false).fadeIn();
+				$('.c-blog__slider-number').stop(true, false).fadeIn();
+			}, function() {
+				$('.c-blog__slider .owl-nav').stop(true, false).fadeOut();
+				$('.c-blog__slider-number').stop(true, false).fadeOut();
+			});
+
+			$('.c-blog__slider').owlCarousel({
+				items:1,
+				loop:true,
+				margin:10,
+				nav:true
 			});
 		});
 	</script>
@@ -356,14 +374,210 @@
 									<span class="c-blog__data">
 										April 18. 2017
 									</span>
+									<span>|</span>
 									<span class="c-blog__name">
 										Анна Мочалина
 									</span>
-								</div>
+								</div><br>
+								<p class="c-blog__description">
+									Красноярск – город на реке Енисей, протекающей через всю Россию, в его верховьях живут верблюды, в низовьях — белые медведи. Здесь гордятся лозунгом Сделано в Сибири, а местные неравнодушные предприниматели смогли найти подход к государству. Их инициатива создания бизнес инкубатора для молодежи была услышана и на территории бывшего ДК Сибтяжмаш появился лофт-проект, соединяющий в себе резиденции сибирских мануфактур, мастерские общественного пользования, парковое и лекционные пространства. Здесь ARCHPOLE и читали лекцию в рамках визита в Красноярск.
+								</p><br>
+								<img src="img/e2e038_0ddea941f8fc43e0849039c5cd3427d8~mv2.jpg" alt="" class="c-blog__photo">
 							</div>
 						</div>
 						<div class="c-blog__right">
-							
+							<div class="c-blog__subitem-wrapper">
+								<b class="c-blog__title">
+									Избранные посты
+								</b>
+								<div class="c-blog__block c-blog__slider owl-carousel">
+									<div class="c-blog__slider-item">
+										<img src="img/e2e038_fa429ed8a9574f3cb39f31d567c25ede.jpg" alt="">
+										<h2>
+											Заголовок
+										</h2>
+										<span>
+											дата публикации поста
+										</span>
+									</div>
+									<div class="c-blog__slider-item">
+										<img src="img/e2e038_fa429ed8a9574f3cb39f31d567c25ede.jpg" alt="">
+										<h2>
+											Заголовок
+										</h2>
+										<span>
+											дата публикации поста
+										</span>
+									</div>
+									<div class="c-blog__slider-item">
+										<img src="img/e2e038_fa429ed8a9574f3cb39f31d567c25ede.jpg" alt="">
+										<h2>
+											Заголовок
+										</h2>
+										<span>
+											дата публикации поста
+										</span>
+									</div>
+								</div>
+								<span class="c-blog__slider-number">1/3</span>
+							</div>
+							<div class="c-blog__subitem-wrapper">
+								<b class="c-blog__title" style="margin-left: 0;">
+									Недавние посты
+								</b>
+								<div class="c-blog__block">
+									<div class="c-blog__subitem clearfix">
+										<div class="c-blog__subitem-left">
+											<img src="img/l-img.jpg" alt="">
+										</div>
+										<div class="c-blog__subitem-right">
+											<p class="c-blog__subitem-title">
+												ARCHPOLE - официальный партнер  BMW RUSSIA
+											</p>
+											<span class="c-blog__subitem-data">
+												March 20, 2017
+											</span>
+										</div>
+									</div>
+									<div class="c-blog__subitem clearfix">
+										<div class="c-blog__subitem-left">
+											<img src="img/e2e038_bbd4c60bb8e842d1b684c589daa0b10a~mv2.jpg" alt="">
+										</div>
+										<div class="c-blog__subitem-right">
+											<p class="c-blog__subitem-title">
+												ARCHPOLE - официальный партнер  BMW RUSSIA
+											</p>
+											<span class="c-blog__subitem-data">
+												March 20, 2017
+											</span>
+										</div>
+									</div>
+									<div class="c-blog__subitem clearfix">
+										<div class="c-blog__subitem-left">
+											<img src="img/l-img.jpg" alt="">
+										</div>
+										<div class="c-blog__subitem-right">
+											<p class="c-blog__subitem-title">
+												ARCHPOLE - официальный партнер  BMW RUSSIA
+											</p>
+											<span class="c-blog__subitem-data">
+												March 20, 2017
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="c-blog__subitem-wrapper">
+								<b class="c-blog__title" style="margin-left: 0;">
+									Архив
+								</b>
+								<div class="c-blog__block">
+									<ul class="c-blog__arhlist">
+										<li class="c-blog__arhlist-item">
+											<a href="#" class="c-blog__arhlist-link">
+												April 2017 (3)
+											</a>
+										</li>
+										<li class="c-blog__arhlist-item">
+											<a href="#" class="c-blog__arhlist-link">
+												April 2017 (3)
+											</a>
+										</li>
+										<li class="c-blog__arhlist-item">
+											<a href="#" class="c-blog__arhlist-link">
+												April 2017 (3)
+											</a>
+										</li>
+										<li class="c-blog__arhlist-item">
+											<a href="#" class="c-blog__arhlist-link">
+												April 2017 (3)
+											</a>
+										</li>
+										<li class="c-blog__arhlist-item">
+											<a href="#" class="c-blog__arhlist-link">
+												April 2017 (3)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="c-blog__subitem-wrapper">
+								<b class="c-blog__title" style="margin-left: 0;">
+									Архив
+								</b>
+								<div class="c-blog__block">
+									<ul class="c-blog__tags">
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+										<li class="c-blog__tags-item">
+											<a href="#" class="c-blog__tags-link">
+												archpole
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="c-blog__subitem-wrapper">
+								<b class="c-blog__title" style="margin-left: 0;">
+									Мы в соц сетях
+								</b>
+								<div class="c-blog__block">
+									<ul class="c-blog__soc">
+										<li class="c-blog__soc-item">
+											<a href="#" class="c-blog__soc-link" style="background-image: url(img/facebock.jpg);"></a>
+										</li>
+										<li class="c-blog__soc-item">
+											<a href="#" class="c-blog__soc-link" style="background-image: url(img/twiter.jpg);"></a>
+										</li>
+										<li class="c-blog__soc-item">
+											<a href="#" class="c-blog__soc-link" style="background-image: url(img/google.jpg);"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
