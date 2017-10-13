@@ -985,6 +985,7 @@ body {
 .c-blog__item {
 	padding: 20px;
 	border: 1px solid #000;
+	margin-bottom: 20px;
 }
 .c-blog__subtitle {
 	width: 100%;
@@ -1195,4 +1196,25 @@ body {
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
+}
+.c-blog__button-wp {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+.c-blog__button {
+	display: inline-block;
+	background-color: rgba(114, 114, 114, 1);
+	color: #fff;
+	padding: 5px 20px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 14px;
+}
+.c-blog__button:hover,
+.c-blog__button:focus,
+.c-blog__button:active {
+	text-decoration: none;
+	color: #fff;
 }
